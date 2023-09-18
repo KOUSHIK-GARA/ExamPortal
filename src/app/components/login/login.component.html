@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-md-6 offset-md-3">
+            <div>
+
+            </div>
+            <h1>Login</h1>
+            <form [formGroup]="loginForm">
+                <mat-form-field class="full-width"   appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input type="text" matInput placeholder="username" name="username" formControlName="username">
+                </mat-form-field>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput placeholder="password" name="password" formControlName="password">
+                </mat-form-field>
+                <div class="container">
+                    <button [disabled]="loginForm.invalid" type="submit" mat-raised-button color="primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
